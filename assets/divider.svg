@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 60" width="900" height="60" role="img" aria-label="decorative divider">
+  <defs>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F9A8D4">
+        <animate attributeName="stop-color" values="#F9A8D4;#C4B5FD;#F9A8D4" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#C4B5FD">
+        <animate attributeName="stop-color" values="#C4B5FD;#93C5FD;#C4B5FD" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#A5B4FC">
+        <animate attributeName="stop-color" values="#A5B4FC;#F9A8D4;#A5B4FC" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#wave)" stroke-linecap="round">
+    <path d="M0 30 Q 75 4 150 30 T 300 30 T 450 30 T 600 30 T 750 30 T 900 30" stroke-width="3"/>
+    <path d="M0 44 Q 75 22 150 44 T 300 44 T 450 44 T 600 44 T 750 44 T 900 44" stroke-width="1.6" opacity=".55"/>
+  </g>
+  <g fill="#F0ABFC">
+    <circle cx="150" cy="30" r="4"/>
+    <circle cx="450" cy="30" r="4"/>
+    <circle cx="750" cy="30" r="4"/>
+  </g>
+</svg>

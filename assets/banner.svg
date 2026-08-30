@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260" role="img" aria-label="Sarmistha Santra, B.Tech student at Haldia Institute of Technology">
+  <title>Sarmistha Santra</title>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFE6F3"/>
+      <stop offset="48%" stop-color="#F1DEFF"/>
+      <stop offset="100%" stop-color="#DDE8FF"/>
+    </linearGradient>
+
+    <linearGradient id="nameGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C2255C">
+        <animate attributeName="stop-color" values="#C2255C;#7C3AED;#C2255C" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#9333EA">
+        <animate attributeName="stop-color" values="#9333EA;#EC4899;#9333EA" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#F472B6">
+        <animate attributeName="stop-color" values="#F472B6;#8B5CF6;#F472B6" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="monoGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F472B6"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+
+    <linearGradient id="barGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F9A8D4"/>
+      <stop offset="100%" stop-color="#A78BFA"/>
+    </linearGradient>
+
+    <radialGradient id="blobA" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF9ACD" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#FF9ACD" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blobB" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity=".45"/>
+      <stop offset="100%" stop-color="#A78BFA" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blobC" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7DD3FC" stop-opacity=".40"/>
+      <stop offset="100%" stop-color="#7DD3FC" stop-opacity="0"/>
+    </radialGradient>
+
+    <clipPath id="card">
+      <rect x="0" y="0" width="900" height="260" rx="26"/>
+    </clipPath>
+  </defs>
+
+  <style>
+    .sans { font-family: 'Trebuchet MS', 'Segoe UI', Verdana, Helvetica, Arial, sans-serif; }
+    .float-a { animation: floatA 7s ease-in-out infinite; }
+    .float-b { animation: floatB 9s ease-in-out infinite; }
+    .twinkle { animation: tw 2.8s ease-in-out infinite; }
+    .twinkle2 { animation: tw 3.6s ease-in-out infinite; animation-delay: .8s; }
+    .twinkle3 { animation: tw 3.2s ease-in-out infinite; animation-delay: 1.6s; }
+    .shine { animation: shine 5.5s ease-in-out infinite; }
+    @keyframes floatA { 0%,100% { transform: translate(0,0); } 50% { transform: translate(14px,-12px); } }
+    @keyframes floatB { 0%,100% { transform: translate(0,0); } 50% { transform: translate(-16px,10px); } }
+    @keyframes tw { 0%,100% { opacity:.20; transform: scale(.85); } 50% { opacity:1; transform: scale(1.15); } }
+    @keyframes shine { 0% { opacity:.35; } 50% { opacity:.9; } 100% { opacity:.35; } }
+  </style>
+
+  <g clip-path="url(#card)">
+    <rect width="900" height="260" fill="url(#bg)"/>
+
+    <!-- soft background blobs -->
+    <circle class="float-a" cx="810" cy="48" r="150" fill="url(#blobA)"/>
+    <circle class="float-b" cx="620" cy="235" r="140" fill="url(#blobB)"/>
+    <circle class="float-a" cx="60" cy="215" r="120" fill="url(#blobC)"/>
+
+    <!-- sparkles -->
+    <g fill="#FFFFFF">
+      <circle class="twinkle"  cx="742" cy="96"  r="3.2"/>
+      <circle class="twinkle2" cx="806" cy="150" r="2.4"/>
+      <circle class="twinkle3" cx="700" cy="60"  r="2.0"/>
+      <circle class="twinkle2" cx="860" cy="112" r="2.6"/>
+      <circle class="twinkle"  cx="466" cy="36"  r="2.2"/>
+      <circle class="twinkle3" cx="330" cy="212" r="2.4"/>
+    </g>
+
+    <!-- monogram -->
+    <g>
+      <circle cx="118" cy="132" r="56" fill="#FFFFFF" opacity=".85"/>
+      <circle cx="118" cy="132" r="56" fill="none" stroke="url(#monoGrad)" stroke-width="4"/>
+      <circle class="shine" cx="118" cy="132" r="47" fill="none" stroke="#F9A8D4" stroke-width="1.5" stroke-dasharray="4 7"/>
+      <text class="sans" x="118" y="146" text-anchor="middle" font-size="42" font-weight="bold" fill="url(#monoGrad)">SS</text>
+    </g>
+
+    <!-- name + taglines -->
+    <text class="sans" x="196" y="104" font-size="20" font-weight="600" letter-spacing="3.2" fill="#8B5CF6">WELCOME TO MY PROFILE</text>
+    <text class="sans" x="196" y="156" font-size="54" font-weight="bold" fill="url(#nameGrad)">Sarmistha Santra</text>
+
+    <rect x="196" y="178" width="430" height="3" rx="1.5" fill="url(#barGrad)"/>
+
+    <text class="sans" x="196" y="206" font-size="19" fill="#5B4A6B">B.Tech Student &#183; Haldia Institute of Technology</text>
+    <text class="sans" x="196" y="230" font-size="17" font-weight="600" fill="#A855A0">HTML &#183; CSS &#183; JavaScript &#183; Java &#183; Python</text>
+
+    <!-- right side pill -->
+    <g>
+      <rect x="646" y="176" width="212" height="40" rx="20" fill="#FFFFFF" opacity=".92"/>
+      <rect x="646" y="176" width="212" height="40" rx="20" fill="none" stroke="#F0ABFC" stroke-width="1.5"/>
+      <circle cx="668" cy="196" r="5" fill="#22C55E"/>
+      <text class="sans" x="682" y="202" font-size="15" font-weight="600" fill="#6B4A7A">Open to collaborate</text>
+    </g>
+  </g>
+
+  <rect x="1" y="1" width="898" height="258" rx="26" fill="none" stroke="#FFFFFF" stroke-width="2" opacity=".8"/>
+</svg>
