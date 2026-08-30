@@ -1,0 +1,65 @@
+<!-- Edit the percentages below: change BOTH the animated width (bar) and the % text.
+     Bar track is 418px wide, so width = 418 x percent / 100.  (e.g. 90% = 376) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 286" width="700" height="286" role="img" aria-label="Self assessed skill levels">
+  <defs>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FB7CC3"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="bar2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F9A8D4"/>
+      <stop offset="100%" stop-color="#A78BFA"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .sans { font-family: 'Trebuchet MS', 'Segoe UI', Verdana, Helvetica, Arial, sans-serif; }
+    .pct { animation: fade 1s ease-in-out both; }
+    @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+  </style>
+
+  <text class="sans" x="10" y="26" font-size="14" font-weight="700" letter-spacing="3" fill="#A855A0">CORE LANGUAGES</text>
+  <rect x="10" y="38" width="680" height="1.5" fill="#F3E8FB"/>
+
+  <!-- HTML -->
+  <text class="sans" x="140" y="80" font-size="17" font-weight="600" text-anchor="end" fill="#4A3B55">HTML5</text>
+  <rect x="158" y="68" width="418" height="14" rx="7" fill="#F3EAF9"/>
+  <rect x="158" y="68" width="0" height="14" rx="7" fill="url(#bar)">
+    <animate attributeName="width" from="0" to="376" dur="1.4s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/>
+  </rect>
+  <text class="sans pct" x="596" y="81" font-size="15" font-weight="700" fill="#8B5CF6">90%</text>
+
+  <!-- CSS -->
+  <text class="sans" x="140" y="122" font-size="17" font-weight="600" text-anchor="end" fill="#4A3B55">CSS3</text>
+  <rect x="158" y="110" width="418" height="14" rx="7" fill="#F3EAF9"/>
+  <rect x="158" y="110" width="0" height="14" rx="7" fill="url(#bar)">
+    <animate attributeName="width" from="0" to="355" dur="1.4s" begin="0.15s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/>
+  </rect>
+  <text class="sans pct" x="596" y="123" font-size="15" font-weight="700" fill="#8B5CF6">85%</text>
+
+  <!-- JavaScript -->
+  <text class="sans" x="140" y="164" font-size="17" font-weight="600" text-anchor="end" fill="#4A3B55">JavaScript</text>
+  <rect x="158" y="152" width="418" height="14" rx="7" fill="#F3EAF9"/>
+  <rect x="158" y="152" width="0" height="14" rx="7" fill="url(#bar)">
+    <animate attributeName="width" from="0" to="313" dur="1.4s" begin="0.3s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/>
+  </rect>
+  <text class="sans pct" x="596" y="165" font-size="15" font-weight="700" fill="#8B5CF6">75%</text>
+
+  <!-- Java -->
+  <text class="sans" x="140" y="206" font-size="17" font-weight="600" text-anchor="end" fill="#4A3B55">Java</text>
+  <rect x="158" y="194" width="418" height="14" rx="7" fill="#F3EAF9"/>
+  <rect x="158" y="194" width="0" height="14" rx="7" fill="url(#bar2)">
+    <animate attributeName="width" from="0" to="292" dur="1.4s" begin="0.45s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/>
+  </rect>
+  <text class="sans pct" x="596" y="207" font-size="15" font-weight="700" fill="#8B5CF6">70%</text>
+
+  <!-- Python -->
+  <text class="sans" x="140" y="248" font-size="17" font-weight="600" text-anchor="end" fill="#4A3B55">Python</text>
+  <rect x="158" y="236" width="418" height="14" rx="7" fill="#F3EAF9"/>
+  <rect x="158" y="236" width="0" height="14" rx="7" fill="url(#bar2)">
+    <animate attributeName="width" from="0" to="271" dur="1.4s" begin="0.6s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1" keyTimes="0;1"/>
+  </rect>
+  <text class="sans pct" x="596" y="249" font-size="15" font-weight="700" fill="#8B5CF6">65%</text>
+
+  <text class="sans" x="10" y="276" font-size="12.5" fill="#9A8AA6">Self-assessed &#183; update the numbers as you grow</text>
+</svg>
